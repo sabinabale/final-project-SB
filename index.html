@@ -7,16 +7,39 @@
     <title>Weather App SB</title>
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
-    <form>
-      <input
-        type="text"
-        placeholder="Enter a city..."
-        autofocus="on"
-        id="citySearch"
-      />
-      <input type="submit" id="submitButton" value="Search" />
-    </form>
-    <script src="java.js"></script>
-  </body>
+  <div class="container">
+    <body>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter a city..."
+          autofocus="on"
+          id="citySearch"
+        />
+        <input type="submit" id="submitButton" value="Search" />
+      </form>
+
+      <h1 id="cityName">city name</h1>
+      <ul>
+        <li>Day and time</li>
+        <li>
+          Humidity:<span id="humidity"></span> % , Wind:<span id="wind"></span>
+          km/h
+        </li>
+      </ul>
+      <ul>
+        <li id="degrees">Temperature</li>
+        <li>weather decription</li>
+      </ul>
+      <p>
+        This project was coded by Sabina Balejikova and is
+        <a href="https://github.com/sabinabale/final-project-SB" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and hosted on
+        <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+      </p>
+      <script src="java.js"></script>
+    </body>
+  </div>
 </html>
