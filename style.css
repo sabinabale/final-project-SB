@@ -1,3 +1,11 @@
+.container {
+  border: solid 1px black;
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
 .basic-grid {
   display: grid;
   gap: 1rem;
@@ -18,4 +26,8 @@ ul {
 
 #details {
   line-height: 1.5;
+}
+
+form {
+  max-width: 90%;
 }
