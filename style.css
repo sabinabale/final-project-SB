@@ -1,9 +1,10 @@
 .container {
-  border: solid 1px black;
+  border: 1px solid black;
   margin: 50px auto;
   padding: 40px;
   max-width: 50%;
   border-radius: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .basic-grid {
@@ -17,17 +18,34 @@
   padding: 10px;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 #details {
   line-height: 1.5;
 }
 
-form {
-  max-width: 90%;
+#citySearch {
+  width: 600px;
+  height: 45px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#submitButton {
+  height: 50.2px;
+  padding: 10px 40px;
+  margin-left: 10px;
+  font: 16px;
+  font-weight: bold;
 }
