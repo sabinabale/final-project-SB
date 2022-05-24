@@ -1,10 +1,16 @@
+body {
+  background-color: #212121;
+}
+
 .container {
   border: 1px solid black;
-  margin: 50px auto;
+  margin: 70px auto;
   padding: 40px;
   max-width: 50%;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(142, 142, 150, 0.5) 20px 20px 20px 0;
 }
 
 .basic-grid {
@@ -35,7 +41,7 @@ ul {
 }
 
 #citySearch {
-  width: 600px;
+  width: 570px;
   height: 45px;
   padding-left: 10px;
   border-radius: 10px;
@@ -46,6 +52,15 @@ ul {
   height: 50.2px;
   padding: 10px 40px;
   margin-left: 10px;
-  font: 16px;
+  margin-right: 0;
+  font-size: 16px;
   font-weight: bold;
+  border: 1px solid #212121;
+  background-color: #212121;
+  border-radius: 10px;
+  color: white;
+}
+
+p {
+  text-align: center;
 }
