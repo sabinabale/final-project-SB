@@ -61,6 +61,20 @@ ul {
   color: white;
 }
 
+#hr-top {
+  max-width: 95%;
+  color: rgb(231, 225, 225);
+  font-size: 1px;
+  margin: 40px auto;
+}
+
+#hr-botom {
+  max-width: 95%;
+  color: rgb(231, 225, 225);
+  font-size: 1px;
+  margin: 40px auto;
+}
+
 p {
   text-align: center;
 }
