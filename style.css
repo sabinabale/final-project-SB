@@ -40,6 +40,12 @@ ul {
   line-height: 1.5;
 }
 
+#searchBar {
+  display: block;
+    text-align: center;
+
+}
+
 #citySearch {
   width: 570px;
   height: 45px;
