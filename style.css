@@ -86,11 +86,11 @@ h1 {
   margin: 40px auto;
 }
 
-#hr-botom {
+#hr-bottom {
   max-width: 95%;
   color: rgb(231, 225, 225);
   font-size: 1px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 p {
@@ -122,4 +122,22 @@ a {
 
 .active:hover {
   text-decoration: none;
+}
+
+.basic-grid-forecast {
+  padding: 50px 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(200px));
+  margin: 0 auto;
+  justify-items: center;
+  justify-content: center;
+}
+
+.card-forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
