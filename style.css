@@ -16,14 +16,23 @@ body {
 .basic-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 3fr 1fr 1fr;
+  width: 80%;
 }
 
-.card {
-  padding: 10px;
-    margin: 0 auto;
-    line-height: 1.5;
+.card-1 {
+  margin-left: 50px;
+  line-height: 1.5;
+}
+
+.card-2 {
+  margin-left: 80px;
+  padding: 0;
+}
+
+.card-3 {
+  padding: 0;
+  margin-left: -20px;
 }
 
 h1 {
@@ -45,8 +54,7 @@ ul {
 
 #searchBar {
   display: block;
-    text-align: center;
-
+  text-align: center;
 }
 
 #citySearch {
@@ -60,7 +68,7 @@ ul {
 #submitButton {
   height: 50.2px;
   width: 20%;
-    margin-left: 10px;
+  margin-left: 10px;
   margin-right: 0;
   font-size: 16px;
   font-weight: bold;
@@ -97,4 +105,8 @@ p {
   position: relative;
   font-size: 16px;
   top: -25px;
+}
+
+#icon {
+  margin-top: -15px;
 }

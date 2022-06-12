@@ -19,36 +19,36 @@
   <div class="container">
     <body>
       <div id="searchBar">
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a city..."
-          autofocus="on"
-          id="citySearch"
-        />
-        <input type="submit" id="submitButton" value="Search" />
-      </form>
-    </div>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            autofocus="on"
+            id="citySearch"
+          />
+          <input type="submit" id="submitButton" value="Search" />
+        </form>
+      </div>
       <hr id="hr-top" />
       <h1 id="cityName">city name</h1>
       <section class="basic-grid">
-        <div class="card" id="details">
-                      <div>Last updated: <span id="dateTime"></span></div>
-            <div id="humWind">
-              Humidity: <span id="humidity"></span>% , Wind: <span
-                id="wind"
-              ></span>
-              km/h
-            </div>
-          </ul>
+        <div class="card-1" id="details">
+          <div>Last updated: <span id="dateTime"></span></div>
+          <div id="humWind">
+            Humidity: <span id="humidity"></span>% , Wind:
+            <span id="wind"></span>
+            km/h
+          </div>
         </div>
-        <div class="card">
-         
-            <div><span id="degrees">20</span>
-              <span id="units">
-              <span id="celsius"> °C </span>|<span id="fahrenheit"> °F</span></span></div>
-            <div id="description">weather description</div>
-        
+        <div class="card-2">
+          <img src="" id="icon" />
+        </div>
+        <div class="card-3">
+          <div id="currentTemp">
+            <strong id="degrees"></strong
+            ><span id="units">°C | <a href="#">°F</a></span>
+          </div>
+          <div id="description">weather description</div>
         </div>
       </section>
       <hr id="hr-botom" />
