@@ -102,3 +102,16 @@ p {
 #icon {
   margin-top: -15px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+}
