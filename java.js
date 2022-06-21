@@ -25,28 +25,19 @@ function displayForecast() {
   let forecastElement = document.querySelector("#basic-grid-forecast");
 
   let forecastHTML = "";
-
-  forecastHTML =
-    forecastHTML +
-    `<div>
-      <div class="card-forecast">Monday</div>
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div>
+      <div class="card-forecast">${day}</div>
       <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42" />
       <div class="weather-forecast-temperatures">
         <span class="weather-forecast-temperature-max">18°</span>
         <span class="weather-forecast-temperature-min">12°</span>
       </div>
     </div>`;
-
-  forecastHTML =
-    forecastHTML +
-    `<div>
-      <div class="card-forecast">Monday</div>
-      <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42" />
-      <div class="weather-forecast-temperatures">
-        <span class="weather-forecast-temperature-max">18°</span>
-        <span class="weather-forecast-temperature-min">12°</span>
-      </div>  
-    </div>`;
+  });
   forecastElement.innerHTML = forecastHTML;
 }
 
