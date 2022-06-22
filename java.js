@@ -21,23 +21,39 @@ function displayDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#basic-grid-forecast");
 
   let forecastHTML = "";
 
-  forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      `<div>
-      <div class="card-forecast">${forecastDay.dt}</div>
-      <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="" width="42" />
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `<div>
+      <div class="card-forecast">${formatDay(forecastDay.dt)}</div>
+      <img src="http://openweathermap.org/img/wn/${
+        forecastDay.weather[0].icon
+      }@2x.png" alt="" width="42" />
       <div class="weather-forecast-temperatures">
-        <span class="weather-forecast-temperature-max">${forecastDay.temp.max}°</span>
-        <span class="weather-forecast-temperature-min">${forecastDay.temp.min}°</span>
+        <span class="weather-forecast-temperature-max">${Math.round(
+          forecastDay.temp.max
+        )}°</span>
+        <span class="weather-forecast-temperature-min">${Math.round(
+          forecastDay.temp.min
+        )}°</span>
       </div>
     </div>`;
+    }
   });
   forecastElement.innerHTML = forecastHTML;
 }
@@ -50,7 +66,7 @@ function getForecast(coordinates) {
 
 function displayTemperature(response) {
   let tempElement = document.querySelector("#degrees");
-  let cityElement = document.querySelector("h1");
+  let cityElement = document.querySelector("#cityName");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let descriptionElement = document.querySelector("#description");

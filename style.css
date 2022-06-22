@@ -28,16 +28,18 @@ body {
 .card-2 {
   margin-left: 80px;
   padding: 0;
+  margin-top: 30px;
 }
 
 .card-3 {
   padding: 0;
   margin-left: -20px;
+  margin-top: 30px;
 }
 
-h1 {
+#cityName {
   font-size: 40px;
-  margin-left: 75px;
+  font-weight: bold;
 }
 
 #details {
@@ -125,7 +127,7 @@ a {
 }
 
 #basic-grid-forecast {
-  padding: 20px 0;
+  padding: 40px 0;
   display: grid;
   gap: 4rem;
   grid-template-columns: repeat(6, 1fr);
@@ -142,4 +144,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+}
+
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
+
+.weather-forecast-temperature-min {
+  color: rgb(107, 101, 101);
 }
