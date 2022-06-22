@@ -49,11 +49,13 @@ body {
 #searchBar {
   display: block;
   text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 #citySearch {
   width: 60%;
-  height: 45px;
+  height: 50px;
   padding-left: 20px;
   border-radius: 10px;
   font-size: 16px;
@@ -82,14 +84,14 @@ body {
 }
 
 #hr-top {
-  max-width: 95%;
+  max-width: 85%;
   color: rgb(231, 225, 225);
   font-size: 1px;
   margin: 40px auto;
 }
 
 #hr-bottom {
-  max-width: 95%;
+  max-width: 85%;
   color: rgb(231, 225, 225);
   font-size: 1px;
   margin: 20px auto;
@@ -97,6 +99,7 @@ body {
 
 p {
   text-align: center;
+  padding-top: 20px;
 }
 
 #degrees {
@@ -145,6 +148,8 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .weather-forecast-temperatures {
