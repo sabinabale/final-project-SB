@@ -17,7 +17,6 @@ body {
   display: grid;
   gap: 1rem;
   grid-template-columns: 3fr 1fr 1fr;
-  display: auto-fit;
   width: 80%;
   margin: 0 auto;
 }
@@ -163,4 +162,8 @@ a {
 
 .weather-forecast-temperature-min {
   color: rgb(107, 101, 101);
+}
+
+#weather-icon {
+  text-align: center;
 }
