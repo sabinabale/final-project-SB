@@ -17,6 +17,7 @@ body {
   display: grid;
   gap: 1rem;
   grid-template-columns: 3fr 1fr 1fr;
+  display: auto-fit;
   width: 80%;
   margin: 0 auto;
 }
@@ -135,8 +136,8 @@ a {
   padding: 40px 0;
   display: grid;
   gap: 4rem;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-columns: repeat(6, minmax(200px));
+  grid-template-columns: repeat(6, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 0 auto;
   justify-content: center;
   display: flex;
