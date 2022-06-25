@@ -120,15 +120,6 @@ a {
   text-decoration: none;
 }
 
-.active {
-  color: black;
-  cursor: default;
-}
-
-.active:hover {
-  text-decoration: none;
-}
-
 #basic-grid-forecast {
   padding: 40px 0;
   display: grid;
@@ -148,8 +139,6 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: block;
-  margin: 0 auto;
 }
 
 .weather-forecast-temperatures {

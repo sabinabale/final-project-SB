@@ -107,18 +107,6 @@ let celsiusTemp = null;
 let form = document.querySelector("#searchForm");
 form.addEventListener("submit", handleSubmit);
 
-function displayFahrenheit(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#degrees");
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  tempElement.innerHTML = Math.round(fahrenheitTemp);
-  celsiusElement.classList.remove("active");
-  fahrenheitElement.classList.add("active");
-}
-
-let fahrenheitElement = document.querySelector("#fahrenheit");
-fahrenheitElement.addEventListener("click", displayFahrenheit);
-
 function displayCelsius(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#degrees");
