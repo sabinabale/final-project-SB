@@ -107,15 +107,4 @@ let celsiusTemp = null;
 let form = document.querySelector("#searchForm");
 form.addEventListener("submit", handleSubmit);
 
-function displayCelsius(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#degrees");
-  tempElement.innerHTML = Math.round(celsiusTemp);
-  celsiusElement.classList.add("active");
-  fahrenheitElement.classList.remove("active");
-}
-
-let celsiusElement = document.querySelector("#celsius");
-celsiusElement.addEventListener("click", displayCelsius);
-
 search("Prague");
