@@ -4,8 +4,8 @@ body {
 
 .container {
   border: 1px solid black;
-  margin: 70px auto;
-  padding: 40px;
+  margin: 50px auto;
+  padding: 50px;
   max-width: 50%;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
@@ -40,6 +40,10 @@ body {
 #cityName {
   font-size: 40px;
   font-weight: bold;
+}
+
+#description {
+  text-align: left;
 }
 
 #dateTime,
@@ -134,12 +138,10 @@ a {
 #basic-grid-forecast {
   padding: 40px 0;
   display: grid;
-  gap: 4rem;
-  grid-template-columns: repeat(6, minmax(200px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   margin: 0 auto;
   justify-content: center;
-  display: flex;
   flex-direction: row;
   align-items: center;
 }
